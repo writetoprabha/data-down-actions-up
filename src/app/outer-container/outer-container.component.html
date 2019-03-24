@@ -1,0 +1,6 @@
+<div class="outer-container">
+  <span>Outer Container:</span><br>
+  <span>names list: {{names}}</span><br>
+  <span>Selected name: {{name}}</span> <br>
+  <app-inner-container *ngFor="let name of names" [name]="name" (eventFromInner)="eventFromInner($event)"></app-inner-container> 
+</div>
